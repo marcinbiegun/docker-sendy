@@ -1,0 +1,3 @@
+# Mysql custome config file
+# enable this if you get error
+#sql-mode=""
