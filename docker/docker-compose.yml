@@ -34,21 +34,6 @@ services:
       - ./php.ini:/usr/local/etc/php/conf.d/01-custom.ini
       # Persistent Log of PHP-FPM
       - ./LOG/nginx:/var/log/nginx
-  psql:
-    # Postgresql Container.
-    image: postgres:latest
-    volumes:
-      # Persistent Data Volume
-      - ./DB/postgresql:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
-    environment:
-      # Auth Information
-      - POSTGRES_PASSWORD=SomeText
-      - POSTGRES_USER=SomeText
-      - POSTGRES_DB=SomeText
-      # Data path. Good practice in case of multiple database instance
-      - PGDATA=/var/lib/postgresql/data/projectName
   mysql:
     # MySql Container.
     image: mysql:latest
