@@ -16,6 +16,9 @@ services:
       - ./server.conf:/etc/nginx/conf.d/default.conf
       # Persistent Log of Nginx Server
       - ./LOG/nginx:/var/log/nginx
+      # Certs
+      - ./sendy.key:/etc/nginx/sendy.key
+      - ./sendy.pem:/etc/nginx/sendy.pem
   php:
     # PHP Container. links to Database Containers.
     build:
