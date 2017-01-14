@@ -27,8 +27,6 @@ services:
     # Change image directive based on your needs
     image: php-fpm:version
     links:
-      # connection to databases. Postgresql and Mysql are available. anything else should work
-      - psql
       - mysql
     volumes:
       # App Code. Same as Nginx Container
