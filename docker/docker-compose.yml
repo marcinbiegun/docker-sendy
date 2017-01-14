@@ -44,7 +44,7 @@ services:
       - ./mysql.cnf:/etc/mysql/conf.d/01-custom.cnf
     environment:
       # Auth Information
-      - MYSQL_ROOT_PASSWORD=SomeText
-      - MYSQL_DATABASE=SomeText
-      - MYSQL_USER=SomeText
-      - MYSQL_PASSWORD=SomeText
+      - MYSQL_DATABASE=sendy
+      - MYSQL_USER=sendy
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=password
