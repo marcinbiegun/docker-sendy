@@ -25,7 +25,7 @@ RUN apt-get install -y zlib1g-dev && docker-php-ext-configure zip --with-zlib-di
 # Remove apt lists to reduce image size
 RUN rm -rf /var/lib/apt/lists/*
 # Optional: error log file for php.
-RUN mkdir -p /var/log/fpm/ && touch /var/log/nginx/php_error.log && chmod 777 /var/log/nginx/php_error.log
+RUN mkdir -p /var/log/fpm/ && mkdir -p /var/log/nginx/ && touch /var/log/nginx/php_error.log && chmod 777 /var/log/nginx/php_error.log
 
 # Warning:
 # Don't use this file directly. You should only have one "RUN" directive in your file. Each directive (RUN,CMD,ADD,COPY) creates
