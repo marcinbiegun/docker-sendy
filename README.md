@@ -1,6 +1,6 @@
 # Docker-Sendy
 
-Docker-compose config for running Sendy. It contains PHP, Mysql and Nginx with SSL support.
+Docker-compose config for running [Sendy](https://sendy.co). It contains PHP, MySql, Nginx (rewrite rules included), SSL support.
 
 ## Installation
 
