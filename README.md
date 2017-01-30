@@ -14,7 +14,7 @@ and a few adjustments requried by Sendy:
 
 ## Installation
 
-If you need step-by-step instructions, read them on my blog: http://marcinbiegun.com/2017/01/15/sendy-docker/
+If you need step-by-step instructions, read them on my blog: http://n23.pl/2017/01/15/sendy-docker/
 
 ## Kudos
 
