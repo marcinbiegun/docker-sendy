@@ -1,3 +1,8 @@
+
+# PROJECT ARCHIVED
+
+Actively maintained alternative: https://github.com/open-forest/sendy
+
 # Docker-Sendy
 
 Docker-compose config for running [Sendy](https://sendy.co).
